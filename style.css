@@ -1,0 +1,201 @@
+body {
+  background-color: #f7f7f7;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 20px;
+
+  /* sempre zerar a distancia do inicio do body para a borda de cima de pagina (professor) */
+   margin: 0px;
+  /* setou a distancia do inicio do body para a borda de cima de pagina (professor) */
+  margin-top: 60px;
+   /* aqui ele transformou todo body em display grid (professor)*/
+  display: grid;
+   /* setou a distancia entre cada display (professor) */
+  gap: 60px;
+  /* e aqui justificou tudo ao centro */
+  justify-items: center;
+
+
+}
+
+/*  Devido os comandos acima dados pelo professor a class caixa logo deixou de ter necessidade.
+.caixadologo { */
+  /* ativa o grid */
+  /* display: grid; */
+  /* distancia da margem de cima - margem topo */
+  /* os comandos abaixo foram tirados pq o professor setou tudo isso ja no body */
+  /* margin-top: 100px; */
+  /* place-content: center; */
+/* } */
+
+.paginasmenu {
+  /* aqui ele usou display flex (professor)*/
+  display: flex;
+  /* ele ativou para se adequar ao tamanho do navegador */
+  flex-wrap: wrap;
+  /* distancia entre as caixas */
+  gap: 20px;
+  /* justificou pra sempre ficar ao centro */
+  justify-content: center;
+
+  /* não precisou comando pra centralizar pq ele ja deu esse comando la na estilização do <body> via comando justify item: center */
+
+  /* display: grid; */
+  /* distancia entre as caixas */
+  /* gap: 20px; */
+  /* informar o tamanho das colunas e quantidade */
+  /* grid-template-columns: 150px 150px 150px 150px; */
+  /* justifica ao centro aqui poderia colocar place-contebt: center center */
+  /* justify-content: center; */
+  /* distancia da caixa da logo acima */
+  /* margin-top: 100px; */
+}
+/* aqui usei "menucima" como class para editar 
+mas poderia ter colocado somente .paginasmenu a {} pois ai editaria toda tag "a" que estivesse dentro da div paginas menu inclusive fiz essa modificação abaixo */
+
+.paginasmenu a {
+  text-decoration: none;
+  /* alinha o texto ao centro */
+  /* text-align: center; */
+  background-color: white;
+  color: black;
+  /* aqui é distancia do texto para as bordas */
+  padding: 20px;
+  /* arredonda as bordas */
+  border-radius: 2px;
+  /* ele colocou tudo em letra maiuscula via esse comando */
+  text-transform: uppercase;
+}
+
+.box01 {
+  display: grid;
+  grid-template-columns: 500px 500px;
+  /* eu ja dei o limite automatico mas ele fez o 1fr 1fr , ou seja, duas colunas pra se adaptar assim: */
+  grid-template-columns: 1fr 1fr;
+  /* e limitou o tamanho com o comando max-width */
+  max-width: 1000px;
+  /* da no mesmo mas ele fez assim */
+  /* comando abaixo desnecessario pela definição do body justify-itens : center;*/
+  /* place-content: center center;  */
+  /* desnecessario devido o comando gap no body
+  que ja seta as distancias entre cada grid */
+  /* margin-top: 50px; */
+}
+.informacoes {
+  display: grid;
+  padding: 10px;
+  justify-items: end;
+  background-color: white;
+  /* alinhou o texto a direita */
+  text-align: right;
+  /* adicionados pelo professor */
+  position: relative;
+  align-content: center;
+  gap: 20px;
+}
+.vejamais {
+  background-color: #ee2211;
+  color: white;
+  text-decoration: none;
+  padding: 20px;
+  /* ele colocou 15px 20px */
+  padding: 15px 20px;
+  border-radius: 4px;
+  /* ele colocou tudo em letra maiscula */
+  text-transform: uppercase;
+}
+
+.detalhe {
+  /* largura */
+  width: 60px;
+  /* altura */
+  height: 4px;
+  background-color: #ee2211;
+  position: absolute;
+  top: 30px;
+  right: -30px;
+}
+
+.imagembike {
+  max-width: 100%;
+  display: block;
+  /* aqui o professor fez da seguinte forma */
+  /* 
+  limitou a 100%
+  max-width: 100%;
+  informou que o 100% era do bloco
+  display: block
+   */
+}
+
+.subtitulo {
+  font-size: 64px;
+  color: #c6c6c6;
+  text-align: right;
+  padding: 40px;
+  align-self: center;
+}
+.vantagens2 {
+  background: #fff;
+  padding: 20px;
+}
+
+.vantagens-item {
+  display: grid;
+  grid-template-columns: auto 1fr;
+  gap: 10px 20px;
+  padding: 20px;
+  /* margin-bottom: -40px; */
+}
+
+.vantagens-item p {
+  grid-column: 2;
+  margin-top: -20px;
+}
+
+.vantagens-item h3 {
+   margin-top: 0px;
+}
+
+/*
+.descricao {
+  background-color: white;
+  padding: 20px;
+  display: grid;
+  grid-template-columns: 20px 200px;
+}
+
+.icone {
+  padding-top: 50px;
+  margin-left: 0px;
+}
+
+.icone1 {
+  margin-left: 0px;
+}
+
+.icone2 {
+  padding-top: 100px;
+  margin-left: 0px;
+}
+
+.icone3 {
+  padding-top: 100px;
+  margin-left: 0px;
+}
+
+.descreva {
+  padding: 20px;
+  margin-left: 10px;
+  width: 280px;
+ } */
+
+.footer {
+  /* display: grid; */
+  background-color: white;
+  /* margin-top: 40px; */
+  /* height: 100px; */
+  text-align: center;
+  width: 100%;
+  box-sizing: border-box;
+  padding: 40px;
+}
